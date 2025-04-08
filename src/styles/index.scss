@@ -50,7 +50,9 @@ body {
         cursor: pointer;
         background-color: #ffbfcb;
         transform: translateY(-20px);
-        transition: 0.5s ease-in;
+        transition:
+          transform 0.5s ease-in,
+          background-color 0.5s ease-in;
       }
 
       &--month-length-#{$number} &__day:nth-child(#{$i})::before {
